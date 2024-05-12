@@ -20,4 +20,4 @@ Details on how to contribute to the project will be included here, specifying an
 
 
 ## Deadline
-**Important: The project submission deadline is Sunday, 19/05/2024 at 11:55 PM. Ensure that all changes and improvements are completed before this time.**
+Important: The project submission deadline is **Sunday, 19/05/2024 at 11:55 PM**. Ensure that all changes and improvements are completed before this time.
