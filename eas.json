@@ -1,11 +1,15 @@
 {
   "build": {
-    "production": {
-      "android": {
-        "image": "latest"
-      },
+    "development": {
       "ios": {
-        "image": "latest"
+        "buildConfiguration": "Debug",
+        "scheme": "myapp-dev"
+      }
+    },
+    "production": {
+      "ios": {
+        "buildConfiguration": "Release",
+        "scheme": "myapp"
       }
     }
   }
