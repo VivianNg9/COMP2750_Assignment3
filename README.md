@@ -12,6 +12,14 @@ This repository contains the source code for the POGS Online Shopping Applicatio
 - **Calculate Button**: Calculates and displays the total cost of the order based on selections.
 - **Developer Credit**: Displays the names of the group members involved in the development of the application.
 
+## Note 
+- [Layout](https://github.com/VivianNg9/COMP2750_Assignment3-/blob/main/Assignment3_Template.js)
+- **Not allowed add any extra screens**
+- Allow to add extra details on the screen
+- Must change the look & feel of the app
+- The application should work **without crashing and must display the right output**
+- Must **handle non-selections** E.g: The total price should not have a NaN error when calculating the total price
+
 ## Installation and Setup
 Instructions on how to set up and run the project locally will be provided here.
 
