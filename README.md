@@ -1,7 +1,7 @@
 # POGS Online Shopping Application
 
 ## Project Overview
-This repository contains the source code for the POGS Online Shopping Application developed as part of COMP2750 Assignment 3. The application provides a simple interface for purchasing vegetables and fruits, with options for quantity selection and total price calculation.
+This repository contains the source code for the [POGS Online Shopping Application](https://github.com/VivianNg9/COMP2750_Assignment3-/blob/main/POGS.js) developed as part of COMP2750 Assignment 3. The application provides a simple interface for purchasing vegetables and fruits, with options for quantity selection and total price calculation.
 
 ## Application Features
 - **Welcome Heading**: Displays the name of the system at the top of the page.
