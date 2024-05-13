@@ -3,9 +3,9 @@ import { View, Text, Picker, Button, Image, StyleSheet } from 'react-native';
 
 const POGSApp = () => {
   // Data
-  const vegetables = { 'Potato': 5, 'Carrot': 8, 'Cabbage': 5, 'Broccoli': 7, 'Spinach': 6 };
-  const fruits = { 'Orange': 11, 'Blueberry': 12, 'Apple': 11, 'Grapes': 15, 'Pineapple': 14 };
-  
+  const vegetables = ['Potato-$5', 'Carrot-$8', 'Cabbage-$5', 'Broccoli-$7', 'Spinach-$6'];
+  const fruits = ['Orange-$11', 'Blueberry-$12', 'Apple-$11', 'Grapes-$15', 'Pineapple-$14'];
+
   // States
   const [selectedVeg, setSelectedVeg] = useState('');
   const [selectedFruit, setSelectedFruit] = useState('');
@@ -14,8 +14,8 @@ const POGSApp = () => {
 
   // Calculate the total cost
   const calculateTotal = () => {
-    const vegPrice = selectedVeg ? vegetables[selectedVeg] : 0;
-    const fruitPrice = selectedFruit ? fruits[selectedFruit] : 0;
+    const vegPrice = selectedVeg ? parseInt(selectedVeg.split('-$')[1]) : 0;
+    const fruitPrice = selectedFruit ? parseInt(selectedFruit.split('-$')[1]) : 0;
     const total = (vegPrice + fruitPrice) * quantity;
     setTotalCost(total);
   };
@@ -28,16 +28,16 @@ const POGSApp = () => {
       <Text>Select Vegetable:</Text>
       <Picker selectedValue={selectedVeg} onValueChange={(itemValue) => setSelectedVeg(itemValue)}>
         <Picker.Item label="Select a vegetable" value="" />
-        {Object.entries(vegetables).map(([key, value]) => (
-          <Picker.Item key={key} label={`${key} - $${value}`} value={key} />
+        {vegetables.map((veg) => (
+          <Picker.Item key={veg} label={veg} value={veg} />
         ))}
       </Picker>
 
       <Text>Select Fruit:</Text>
       <Picker selectedValue={selectedFruit} onValueChange={(itemValue) => setSelectedFruit(itemValue)}>
         <Picker.Item label="Select a fruit" value="" />
-        {Object.entries(fruits).map(([key, value]) => (
-          <Picker.Item key={key} label={`${key} - $${value}`} value={key} />
+        {fruits.map((fruit) => (
+          <Picker.Item key={fruit} label={fruit} value={fruit} />
         ))}
       </Picker>
 
@@ -51,7 +51,7 @@ const POGSApp = () => {
       <Button title="Calculate" onPress={calculateTotal} />
       <Text>Total Cost of Order: ${totalCost}</Text>
 
-      <Text style={styles.footer}>App developed by [Vivian Nguyen]</Text>
+      <Text style={styles.footer}>App developed by Vivian Nguyen and team</Text>
     </View>
   );
 };
