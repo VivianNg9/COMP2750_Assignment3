@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { View, Text, Picker, Button, Image, StyleSheet } from 'react-native';
+import { View, Text, Button, Image, StyleSheet } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
 
 const POGSApp = () => {
   // Data
@@ -51,7 +52,7 @@ const POGSApp = () => {
       <Button title="Calculate" onPress={calculateTotal} />
       <Text>Total Cost of Order: ${totalCost}</Text>
 
-      <Text style={styles.footer}>App developed by Vivian Nguyen and team</Text>
+      <Text style={styles.footer}>App developed by Group 8</Text>
     </View>
   );
 };
@@ -64,3 +65,4 @@ const styles = StyleSheet.create({
 });
 
 export default POGSApp;
+
