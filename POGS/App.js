@@ -29,19 +29,18 @@ export default function App() {
           <Text style={styles.sectionTitle}>Vegetable Choice</Text>
           <View style={styles.pickerRow}>
             <Picker
-              style={styles.picker}
+              style={styles.picker1}
               selectedValue={veggieSelected}
               onValueChange={(itemValue) => setVeggieSelected(itemValue)}
             >
               <Picker.Item label="Select Vegetable" value="" />
               <Picker.Item label="Tomato - $6" value="6" />
               <Picker.Item label="Broccoli - $5" value="5" />
-              <Picker.Item label="Carrot - $8" value="8" />
+              <Picker.Item label="Carrot - $5" value="8" />
               <Picker.Item label="Spinach - $4" value="4" />
-              <Picker.Item label="Potato - $5" value="5" />
             </Picker>
             <Picker
-              style={styles.picker}
+              style={styles.picker2}
               selectedValue={veggieQuantity}
               onValueChange={(itemValue) => setVeggieQuantity(itemValue)}
             >
@@ -55,7 +54,7 @@ export default function App() {
           <Text style={styles.sectionTitle}>Fruit Choice</Text>
           <View style={styles.pickerRow}>
             <Picker
-              style={styles.picker}
+              style={styles.picker1}
               selectedValue={fruitSelected}
               onValueChange={(itemValue) => setFruitSelected(itemValue)}
             >
@@ -63,11 +62,10 @@ export default function App() {
               <Picker.Item label="Apple - $7" value="7" />
               <Picker.Item label="Orange - $8" value="8" />
               <Picker.Item label="Kiwi - $8" value="8" />
-              <Picker.Item label="Mango - $12" value="12" />
-              <Picker.Item label="Banana - $7" value="7" />
+              <Picker.Item label="Mang - $12" value="12" />
             </Picker>
             <Picker
-              style={styles.picker}
+              style={styles.picker2}
               selectedValue={fruitQuantity}
               onValueChange={(itemValue) => setFruitQuantity(itemValue)}
             >
@@ -118,7 +116,7 @@ const styles = StyleSheet.create({
     height: 200,
   },
   dropdownContainer: {
-    marginBottom: 30,
+    marginBottom: 20,
   },
   sectionTitle: {
     fontSize: 18,
@@ -130,14 +128,22 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginBottom: 20,
   },
-  picker: {
+  picker1: {
+    flex: 2,
+    color: '#008037',
+    backgroundColor: '#e0f7da',
+    borderRadius: 5,
+    marginHorizontal: 1,
+    justifyContent: 'center',
+    textAlign: 'center',
+  },
+  picker2: {
     flex: 1,
     color: '#008037',
     backgroundColor: '#e0f7da',
-    borderRadius: 10,
-    marginHorizontal: 5,
+    borderRadius: 5,
+    marginHorizontal: 1,
     justifyContent: 'center',
-    alignItems: 'center',
     textAlign: 'center',
   },
   buttonContainer: {
