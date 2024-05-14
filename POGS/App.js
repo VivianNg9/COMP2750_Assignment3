@@ -36,8 +36,9 @@ export default function App() {
               <Picker.Item label="Select Vegetable" value="" />
               <Picker.Item label="Tomato - $6" value="6" />
               <Picker.Item label="Broccoli - $5" value="5" />
-              <Picker.Item label="Carrot - $5" value="8" />
+              <Picker.Item label="Carrot - $8" value="8" />
               <Picker.Item label="Spinach - $4" value="4" />
+              <Picker.Item label="Potato - $5" value="5" />
             </Picker>
             <Picker
               style={styles.picker}
@@ -62,7 +63,8 @@ export default function App() {
               <Picker.Item label="Apple - $7" value="7" />
               <Picker.Item label="Orange - $8" value="8" />
               <Picker.Item label="Kiwi - $8" value="8" />
-              <Picker.Item label="Mang - $12" value="12" />
+              <Picker.Item label="Mango - $12" value="12" />
+              <Picker.Item label="Banana - $7" value="7" />
             </Picker>
             <Picker
               style={styles.picker}
@@ -134,6 +136,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#e0f7da',
     borderRadius: 10,
     marginHorizontal: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
   },
   buttonContainer: {
     alignItems: 'center',
