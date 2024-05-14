@@ -13,7 +13,7 @@ This repository contains the source code for the [POGS Online Shopping Applicati
 - **Developer Credit**: Displays the names of the group members involved in the development of the application.
 
 ## Note 
-- [Layout](https://github.com/VivianNg9/COMP2750_Assignment3/tree/main/POGS)
+- [Layout]([https://github.com/VivianNg9/COMP2750_Assignment3/tree/main/POGS](https://github.com/VivianNg9/COMP2750_Assignment3/tree/f134a2d52cfa77a6c9d443f436a0511e9a9e6136/POGS))
 - **Not allowed add any extra screens**
 - Allow to add extra details on the screen
 - Must change the look & feel of the app
