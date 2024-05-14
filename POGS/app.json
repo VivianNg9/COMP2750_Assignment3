@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "pogs",
-    "slug": "snack-1596743f-a762-440c-8d61-aaee7f5bdc8f",
+    "slug": "snack-873aaaa3-4b39-49b7-8222-ac43b34a9fd1",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,6 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
