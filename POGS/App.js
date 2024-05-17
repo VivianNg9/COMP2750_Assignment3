@@ -19,9 +19,9 @@ export default function App() {
   const [totalPrice, setTotalPrice] = useState("Total cost of the order:");
 
   const calculateTotal = () => {
-    const vegCost = veggieSelected ? parseInt(veggieSelected) : 0;
+    const vegCost = parseInt(veggieSelected) || 0; //assigns 0 if veggieSelected's value cannot be converted to an int ex: NaN (Not a Number)
     const vegQuant = parseInt(veggieQuantity);
-    const fruitCost = fruitSelected ? parseInt(fruitSelected) : 0;
+    const fruitCost = parseInt(fruitSelected) || 0; //assigns 0 if fruitSelected's value cannot be converted to an int ex: NaN (Not a Number)
     const fruitQuant = parseInt(fruitQuantity);
     setTotalPrice(
       "Total cost of the order: $" +
@@ -49,6 +49,7 @@ export default function App() {
               <Picker.Item label="Broccoli - $5" value="5" />
               <Picker.Item label="Carrot - $5" value="5" />
               <Picker.Item label="Spinach - $4" value="4" />
+              <Picker.Item label="Squash - $4" value="4" />
             </Picker>
             <Picker
               style={styles.picker2}
@@ -70,10 +71,11 @@ export default function App() {
               onValueChange={(itemValue) => setFruitSelected(itemValue)}
             >
               <Picker.Item label="Select Fruit" value="" />
-              <Picker.Item label="Apple - $7" value="7" />
-              <Picker.Item label="Orange - $8" value="8" />
-              <Picker.Item label="Kiwi - $8" value="8" />
+              <Picker.Item label="Apple - $11" value="11" />
+              <Picker.Item label="Orange - $15" value="15" />
+              <Picker.Item label="Kiwi - $14" value="14" />
               <Picker.Item label="Mango - $12" value="12" />
+              <Picker.Item label="Grapes - $12" value="12" />
             </Picker>
             <Picker
               style={styles.picker2}
